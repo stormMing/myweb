@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<img src="http://ww1.sinaimg.cn/large/005VVqRPly1fzs9x94htej318g0rstdo.jpg" alt="" width ="100" id="im1"/>
+<img src="http://ww1.sinaimg.cn/large/005VVqRPly1fzs9xmqp0ej303k03k0ss.jpg" alt="" width ="100" id="im2"/>
+<img src="http://ww1.sinaimg.cn/large/005VVqRPly1fzs9y3swb6j306y08bgn1.jpg" alt="" width ="100" id="im3"/>
+
+<script>
+    var imgObjs = document.getElementsByTagName("img");
+    for(var i = 0;i < imgObjs.length; i++){
+        imgObjs[i].onclick = function () {
+            alert("图片被点了")
+        }
+    }
+</script>
+</body>
+</html>
