@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="button" value="显示图片" id="btn"/>
+<img src="" alt="" id="im"/>
+<script>
+    // 点击按钮的时候设置img标签的src属性
+
+    //根据id获取按钮
+    var btnObj = document.getElementById("btn");
+    //为按钮注册点击事件，添加事件处理函数
+    btnObj.onclick = function () {
+        var imObj = document.getElementById("im");
+        imObj.src = "http://ww1.sinaimg.cn/large/005VVqRPly1fzs85nxhbuj30ku0v8406.jpg";
+        imObj.width = "300";
+        imObj.height = "400";
+    };
+    
+
+</script>
+</body>
+</html>
