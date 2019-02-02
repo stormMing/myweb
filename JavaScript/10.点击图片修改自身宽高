@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<img src="http://ww1.sinaimg.cn/large/005VVqRPly1fzs9y3swb6j306y08bgn1.jpg" alt="" id="im"/>
+<script>
+    var imgObj = document.getElementById("im");
+    imgObj.onclick = function () {
+        this.width = "600";
+        this.height = "600";
+    };
+</script>
+</body>
+</html>
