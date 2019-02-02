@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="button" value="显示效果" id="btn"/>
+<a id="sg" href="http://www.sogou.com/">搜狗</a>
+<script>
+
+    // document.getElementById("btn").onclick = function () {
+    //     document.getElementById("sg").href = "http://www.baidu.com/";
+    //     document.getElementById("sg").innerText = "百度";
+    // }
+
+    //修改之后
+    document.getElementById("btn").onclick = function () {
+        var aObj = document.getElementById("sg");
+        aObj.href = "http://www.baidu.com";
+        aObj.innerText = "百度";
+    };
+</script>
+</body>
+</html>
