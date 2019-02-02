@@ -18,6 +18,7 @@
 <input type="button" value="2显示效果" onclick="f1()"/>
 
 <!--版本3-->
+//先有按钮,才能获取,获取之后才能注册事件
 <input type="button" value="3开始分离代码" id="btn"/>
 <script>
     function f2() {
