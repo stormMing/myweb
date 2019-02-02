@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<a href="http://ww1.sinaimg.cn/large/005VVqRPly1fzsbm3v2jej30zk0m8gxa.jpg" id="ak" >
+    <img src="http://ww1.sinaimg.cn/large/005VVqRPly1fzsbmq7jmcj305k03gwee.jpg" alt="" id="im">
+</a>
+<script>
+    //点击图片标签，设置图片标签的src路径为超链接中大图的路径
+    document.getElementById("im").onclick = function () {
+        this.src = document.getElementById("ak").href;
+        return false;
+    };
+</script>
+</body>
+</html>
