@@ -32,3 +32,40 @@
 </script>
 </body>
 </html>
+
+//改进：只用一个按钮
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div{
+            width: 300px;
+            height: 200px;
+            background-color: pink;
+        }
+    </style>
+</head>
+<body>
+<input type="button" value="隐藏" id="btn"/>
+<div id="dv"></div>
+
+<script>
+    function my$(id) {
+        return document.getElementById(id);
+    }
+
+    my$("btn").onclick = function () {
+        if(this.value == "隐藏"){
+            my$("dv").style.display = "none";
+            this.value = "显示";
+        }else if(this.value=="显示"){
+            my$("dv").style.display = "block";
+            this.value = "隐藏";
+        }
+    };
+</script>
+</body>
+</html>
+
