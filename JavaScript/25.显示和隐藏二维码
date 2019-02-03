@@ -7,7 +7,7 @@
     .nodeSmall {
       width: 50px;
       height: 50px;
-      background: url(images/bgs.png) no-repeat -159px -51px;
+      background: url("http://ww1.sinaimg.cn/large/005VVqRPly1fztcanjow1j308q0dcq2s.jpg") no-repeat -159px -51px;
       position: fixed;
       right: 10px;
       top: 40%;
@@ -37,11 +37,16 @@
 <div class="nodeSmall" id="node_small">
   <a href="#"></a><!--点击二维码可以跳转，锚定-->
   <div class="erweima hide" id="er">
-    <img src="images/456.png" alt=""/>
+       <img src="http://ww1.sinaimg.cn/large/005VVqRPly1fztca6cw2vj3045048dfp.jpg" alt="">
   </div>
 </div>
-<script src="common.js"></script>
+
 <script>
+
+    function my$(id) {
+        return document.getElementById(id);
+    }
+    
   //获取鼠标要进入的a标签
 
   //先获取最外面的div
